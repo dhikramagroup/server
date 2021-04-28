@@ -1,0 +1,16 @@
+{{ template "header.html"}}
+<main>
+    {{range.video}}
+    <div class="container">
+        <div class="videos">
+            {{.URL}}
+        </div>
+
+        <div class="description">
+            <h2>{{.Title}} </h2>
+            <p>{{.Description}}</p>
+        </div>
+    </div>
+    {{end}}
+</main>
+{{ template "footer.html"}}
