@@ -53,5 +53,5 @@ func main() {
 		viewRoute.GET("/videos", videosController.ShowAll)
 	}
 
-	server.Run(":3000")
+	server.Run(":80")
 }
