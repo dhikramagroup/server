@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>{{.title}}</title>
+    <script>
+       window.onload = function() { 
+    var all_links = document.getElementById("nav").getElementsByTagName("a"),
+        i=0, len=all_links.length,
+        full_path = location.href.split('#')[0]; //Ignore hashes?
+
+    // Loop through each link.
+    for(; i<len; i++) {
+        if(all_links[i].href.split("#")[0] == full_path) {
+            all_links[i].className += " active";
+        }
+    }
+}
+    </script>
 </head>
+
 <body>
-    <header>header</header>
+    <header>
+        <div class="extra-header">
+            extra-header
+        </div>
+
+        <div class="heading">
+            <div class="logo">logo</div>
+            <div class="information-contact">
+                <div class="phone">Phone</div>
+                <div class="place">JL Taruna</div>
+                <div class="time">02/20/2022</div>
+            </div>
+        </div>
+        <nav id="nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+            <ul>
+                <li itemprop="name"><a itemprop="url" href="/">Home</a></li>
+                <li itemprop="name"><a itemprop="url" href="/about">About</a></li>
+                <li itemprop="name"><a itemprop="url" href="/contact-us">Contact</a></li>
+                <li itemprop="name"><a itemprop="url" href="/gallery">Gallery</a></li>
+                <li itemprop="name"><a itemprop="url" href="/blog">Blog</a></li>
+            </ul>
+        </nav>
+
+        <div class="carousel">
+            carousel
+        </div>
+    </header>

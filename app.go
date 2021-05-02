@@ -27,10 +27,9 @@ func main() {
 	setupLogOutput()
 	server := gin.New()
 
-	server.Static("/css", ".template/css")
+	server.Static("/css", "./templates/css")
 	server.LoadHTMLGlob("templates/*.html")
-	server.Use(gin.Recovery(), midlewares.Logger(),
-		midlewares.BasicAuth(), gindump.Dump())
+	server.Use(gin.Recovery(), midlewares.Logger(), gindump.Dump())
 
 	apiRoutes := server.Group("/api")
 	{
@@ -48,10 +47,14 @@ func main() {
 		})
 	}
 
-	viewRoute := server.Group("/view")
+	viewRoute := server.Group("/")
 	{
-		viewRoute.GET("/videos", videosController.ShowAll)
+		viewRoute.GET("/", videosController.ShowAll)
+		viewRoute.GET("/about", videosController.ShowAll)
+		viewRoute.GET("/contact-us", videosController.ShowAll)
+		viewRoute.GET("/gallery", videosController.ShowAll)
+		viewRoute.GET("/blog", videosController.ShowAll)
 	}
 
-	server.Run(":80")
+	server.Run(":8080")
 }

@@ -10,7 +10,39 @@
 	- header.html
 	- index.html
 
-[GIN-debug] GET    /api/videos               --> main.main.func1 (5 handlers)
-[GIN-debug] POST   /api/videos               --> main.main.func2 (5 handlers)
-[GIN-debug] GET    /view/videos              --> github.com/dhikramagroup/gin-server/controller.VideosController.ShowAll-fm (5 handlers)
-[GIN-debug] Listening and serving HTTP on :3000
+[GIN-debug] GET    /api/videos               --> main.main.func1 (4 handlers)
+[GIN-debug] POST   /api/videos               --> main.main.func2 (4 handlers)
+[GIN-debug] GET    /                         --> github.com/dhikramagroup/gin-server/controller.VideosController.ShowAll-fm (4 handlers)
+[GIN-debug] GET    /about                    --> github.com/dhikramagroup/gin-server/controller.VideosController.ShowAll-fm (4 handlers)
+[GIN-debug] GET    /contact-us               --> github.com/dhikramagroup/gin-server/controller.VideosController.ShowAll-fm (4 handlers)
+[GIN-debug] GET    /gallery                  --> github.com/dhikramagroup/gin-server/controller.VideosController.ShowAll-fm (4 handlers)
+[GIN-debug] GET    /blog                     --> github.com/dhikramagroup/gin-server/controller.VideosController.ShowAll-fm (4 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+::1 - [03 May 21 00:55 WIB] GET / 200 1.989678ms 
+::1 - [03 May 21 00:55 WIB] GET /about 200 3.959965ms 
+::1 - [03 May 21 00:55 WIB] GET /contact-us 200 18.40178ms 
+::1 - [03 May 21 00:55 WIB] GET /gallery 200 2.434232ms 
+::1 - [03 May 21 00:55 WIB] GET /blog 200 7.381045ms 
+::1 - [03 May 21 00:55 WIB] GET / 200 1.159222ms 
+::1 - [03 May 21 00:55 WIB] GET /blog 200 5.69936ms 
+::1 - [03 May 21 00:56 WIB] GET /blog 200 1.468755ms 
+::1 - [03 May 21 00:56 WIB] GET /blog 200 1.422938ms 
+::1 - [03 May 21 00:56 WIB] GET / 200 1.55142ms 
+::1 - [03 May 21 00:56 WIB] GET /about 200 15.975292ms 
+::1 - [03 May 21 00:56 WIB] GET /about 200 16.017249ms 
+::1 - [03 May 21 00:56 WIB] GET /about 200 1.346373ms 
+::1 - [03 May 21 00:56 WIB] GET /contact-us 200 4.971012ms 
+::1 - [03 May 21 00:56 WIB] GET /blog 200 1.172516ms 
+::1 - [03 May 21 00:57 WIB] GET / 200 12.115719ms 
+::1 - [03 May 21 00:57 WIB] GET /about 200 10.058983ms 
+::1 - [03 May 21 00:57 WIB] GET /contact-us 200 10.366573ms 
+::1 - [03 May 21 00:57 WIB] GET /gallery 200 1.346599ms 
+::1 - [03 May 21 00:57 WIB] GET /gallery 200 2.061299ms 
+::1 - [03 May 21 00:57 WIB] GET /contact-us 200 2.774047ms 
+::1 - [03 May 21 00:58 WIB] GET /contact-us 200 2.195169ms 
+::1 - [03 May 21 00:58 WIB] GET /blog 200 2.522683ms 
+::1 - [03 May 21 00:59 WIB] GET /blog 200 1.433212ms 
+::1 - [03 May 21 00:59 WIB] GET /gallery 200 11.669901ms 
+::1 - [03 May 21 00:59 WIB] GET /contact-us 200 2.443738ms 
+::1 - [03 May 21 00:59 WIB] GET /about 200 1.254422ms 
+::1 - [03 May 21 00:59 WIB] GET / 200 2.884612ms 

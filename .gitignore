@@ -1,2 +1,6 @@
 bin/
 .env
+templates/css/styles.css.map
+templates/css/home.css.map
+templates/css/home.css .
+scss/
